@@ -1,0 +1,45 @@
+{
+  "name": "react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/f2": "^3.6.0-alpha.2",
+    "antd": "^3.25.3",
+    "axios": "^0.19.0",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "node scripts/start.js",
+    "start": "react-scripts start",
+    "build": "npm run build-css && node scripts/build.js",
+    "eject": "react-scripts eject",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "build-css": "node-sass-chokidar src/ -o src/",
+  "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://c.y.qq.com"
+}
